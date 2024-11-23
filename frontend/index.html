@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gestión de Productos</h1>
+    <div id="product-form">
+        <h2>Crear Producto</h2>
+        <form id="createProductForm">
+            <input type="text" id="name" placeholder="Nombre del producto" required>
+            <input type="text" id="description" placeholder="Descripción" required>
+            <input type="number" id="price" placeholder="Precio" required>
+            <input type="number" id="stock" placeholder="Stock" required>
+            <button type="submit">Crear</button>
+        </form>
+    </div>
+    <div id="product-list">
+        <table id="product-table"> 
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="products">
+            </tbody>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
